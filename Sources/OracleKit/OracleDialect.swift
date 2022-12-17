@@ -25,6 +25,7 @@ public struct OracleDialect: SQLDialect {
     public var alterTableSyntax: SQLAlterTableSyntax { .init(alterColumnDefinitionClause: SQLRaw("MODIFY"), allowsBatch: true) }
     public var upsertSyntax: SQLUpsertSyntax { .unsupported }
     public var supportsReturning: Bool { true }
+    public var supportsIfExists: Bool { false }
     public var unionFeatures: SQLUnionFeatures { [.union, .unionAll, .intersect, .explicitDistinct, .parenthesizedSubqueries] }
 
     public func customDataType(for dataType: SQLDataType) -> SQLExpression? { nil }
