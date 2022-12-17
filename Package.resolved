@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "async-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vapor/async-kit.git",
+      "state" : {
+        "revision" : "3be4b6418d1e8b835b0b1a1bee06b249faa4da5f",
+        "version" : "1.14.0"
+      }
+    },
+    {
       "identity" : "oracle-nio",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lovetodream/oracle-nio.git",
       "state" : {
         "branch" : "main",
         "revision" : "0d43345c8047bb50a57fae0acd0853fd95ecd99e"
+      }
+    },
+    {
+      "identity" : "sql-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vapor/sql-kit.git",
+      "state" : {
+        "revision" : "dcf10a00d7d5df987b7948e6fd5596fb65f6d0c2",
+        "version" : "3.23.0"
       }
     },
     {
