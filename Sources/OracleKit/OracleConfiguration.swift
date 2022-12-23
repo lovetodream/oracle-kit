@@ -5,7 +5,7 @@ public struct OracleConfiguration {
     public var connectionString: String
     public var clientLibraryDirectory: String?
 
-    init(
+    public init(
         authorizationMode: OracleConnection.AuthorizationMode = .default,
         username: String,
         password: String,
