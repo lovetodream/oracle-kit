@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lovetodream/sql-kit.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "c48907193844d151cf86f7d0d4911be403aad495"
+        "branch" : "oracle",
+        "revision" : "0becf60e745ce937beb290d8962425bb24a2cfae"
       }
     },
     {

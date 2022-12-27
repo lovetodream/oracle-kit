@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
          .package(url: "https://github.com/lovetodream/oracle-nio.git", branch: "main"),
-         .package(url: "https://github.com/lovetodream/sql-kit.git", branch: "main"), // use vapor version once PR#
+         .package(url: "https://github.com/lovetodream/sql-kit.git", branch: "oracle"), // use vapor version once Oracle specific PRs are merged
          .package(url: "https://github.com/vapor/async-kit.git", from: "1.14.0"),
     ],
     targets: [
