@@ -30,6 +30,8 @@ public struct OracleDialect: SQLDialect {
     public var supportsIfExists: Bool { false }
     public var unionFeatures: SQLUnionFeatures { [.union, .unionAll, .intersect, .explicitDistinct, .parenthesizedSubqueries] }
     public var supportsMultiRowInsert: Bool { false }
+    public var defaultForeignKeyAction: SQLForeignKeyAction? { .noAction }
+    public var foreignKeyActions: [SQLForeignKeyAction] { [.noAction, .setNull, .cascade] }
 
     public func customDataType(for dataType: SQLDataType) -> SQLExpression? {
         // ref: https://docs.oracle.com/en/database/oracle/oracle-database/19/odbcu/database-gateway-odbc-data-type-conversion.html
